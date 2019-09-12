@@ -85,6 +85,18 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "World of Warcraft Returns",
+    date: "September 10, 2019",
+    firstParagraph:
+      "World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft",
+
+    secondParagraph:
+      "World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft",
+
+    thirdParagraph:
+      "World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft World of Warcraft"
   }
 ];
 
@@ -142,14 +154,14 @@ function componentFactory(data) {
   button.style.width = "100%";
   button.style.height = "25px";
   button.style.background = "linear-gradient(to bottom, transparent, white)";
-  button.style.textAlign = 'center';
-  button.style.fontWeight = '900';
-  button.style.fontSize = 'larger';
+  button.style.textAlign = "center";
+  button.style.fontWeight = "900";
+  button.style.fontSize = "larger";
 
   // add content to elements
   header.textContent = data.title;
   date.textContent = data.date;
-  button.textContent = '...';
+  button.textContent = "...";
   const paragraphKeys = Object.keys(data).filter(key =>
     key.includes("Paragraph")
   );
